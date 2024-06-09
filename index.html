@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en,zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWSHOWMovieBookingWebSite</title>
+
+    <!-- import CDN -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css.css">
+</head>
+<body >
+<nav class="navbar navbar-light justify-content-end" id="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent" data-bs-theme="light">
+    <div class=" p-4" id="navbarContent">
+        <h5 class="text-body-emphasis h4" id="navbarTitle">SHOWSHOW電影訂票網</h5>
+        <span class="text-body-secondary" id="rgbText">RGB</span>
+        <span onclick="dm()"> | <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 256 256" xml:space="preserve">
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+            </g>
+        </svg> | </span>
+
+        <span onclick="vintage()"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/FAB005/filled-circle--v1.png" alt="filled-circle--v1"/>| </span>
+        <span onclick="imagebackground()"> <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/image.png" alt="image"/> | </span>
+
+        <!-- 新增連結欄位 -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">電影</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">訂票</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">關於我們</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/webp/webp001.webp"  class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/webp/webp002.webp"  class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/webp/webp003.webp"  class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+
+<footer   class="footer" class="dark-mode"  class="vintage-mode";  id="footer" >
+    <p>© 2024 SWHOSHOW Movie Booking. All rights reserved.<span>&trade;</span></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<script src="js.js"defer></script>
+
+</body>
+</html>
