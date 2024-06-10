@@ -155,19 +155,13 @@ select, button {
     padding: 150px;
     cursor: pointer;
 }
-#web1Content
-{
+#web1Content,
+#web2Content,
+#web3Content {
     text-align: center;
     justify-content: center;
-}
-#web2Content
-{
-    text-align: center;
-    justify-content: center;
-}
-
-#web3Content
-{
-    text-align: center;
-    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
 }
