@@ -376,17 +376,22 @@ document.addEventListener("DOMContentLoaded", function() {
 //content function
 
 // 獲取需要操作的元素
+
+
+var carousel = document.querySelector('#carouselExampleAutoplaying');
+
 var web1Image = document.querySelector('#web1Image');
 var web2Image = document.querySelector('#web2Image');
 var web3Image = document.querySelector('#web3Image');
 
-var carousel = document.querySelector('#carouselExampleAutoplaying');
 
 var web1Content = document.querySelector('#web1Content');
 var web2Content = document.querySelector('#web2Content');
 var web3Content = document.querySelector('#web3Content');
 
-var backButton = document.querySelector('.backButton');
+var backButton1 = document.querySelector('#backButton1');
+var backButton2 = document.querySelector('#backButton2');
+var backButton3 = document.querySelector('#backButton3');
 
 // 監聽圖片點擊事件
 web1Image.addEventListener('click', function() {
@@ -398,22 +403,51 @@ web1Image.addEventListener('click', function() {
 web2Image.addEventListener('click', function() {
     // 隱藏自動輪播圖
     carousel.style.display = 'none';
-    // 顯示web1的內容
+    // 顯示web2的內容
     web2Content.style.display = 'block';
 });
 web3Image.addEventListener('click', function() {
     // 隱藏自動輪播圖
     carousel.style.display = 'none';
-    // 顯示web1的內容
+    // 顯示web3的內容
     web3Content.style.display = 'block';
 });
 
 // 監聽返回按鈕點擊事件
-backButton.addEventListener('click', function() {
+backButton1.addEventListener('click', function() {
     // 隱藏web1的內容
     web1Content.style.display = 'none';
+    // 顯示自動輪播圖
+    carousel.style.display = 'block';
+});
+// 監聽返回按鈕點擊事件
+backButton2.addEventListener('click', function() {
+    // 隱藏web1的內容
     web2Content.style.display = 'none';
+    // 顯示自動輪播圖
+    carousel.style.display = 'block';
+});
+// 監聽返回按鈕點擊事件
+backButton3.addEventListener('click', function() {
+    // 隱藏web1的內容
     web3Content.style.display = 'none';
     // 顯示自動輪播圖
     carousel.style.display = 'block';
 });
+
+
+
+// // 監聽返回按鈕點擊事件
+// backButton.addEventListener('click', function() {
+//     // 隱藏web2的內容
+//     web2Content.style.display = 'none';
+//     // 顯示自動輪播圖
+//     carousel.style.display = 'block';
+// });
+// // 監聽返回按鈕點擊事件
+// backButton.addEventListener('click', function() {
+//     // 隱藏web3的內容
+//     web3Content.style.display = 'none';
+//     // 顯示自動輪播圖
+//     carousel.style.display = 'block';
+// });
