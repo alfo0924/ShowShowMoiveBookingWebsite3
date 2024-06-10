@@ -373,4 +373,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+//content function
 
+// 獲取需要操作的元素
+var web1Image = document.querySelector('#web1Image');
+var carousel = document.querySelector('#carouselExampleAutoplaying');
+var web1Content = document.querySelector('#web1Content');
+var backButton = document.querySelector('#backButton');
+
+// 監聽圖片點擊事件
+web1Image.addEventListener('click', function() {
+    // 隱藏自動輪播圖
+    carousel.style.display = 'none';
+    // 顯示web1的內容
+    web1Content.style.display = 'block';
+});
+
+// 監聽返回按鈕點擊事件
+backButton.addEventListener('click', function() {
+    // 隱藏web1的內容
+    web1Content.style.display = 'none';
+    // 顯示自動輪播圖
+    carousel.style.display = 'block';
+});
