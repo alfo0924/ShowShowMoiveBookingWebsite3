@@ -153,4 +153,21 @@ select, button {
 #carouselExampleAutoplaying
 {
     padding: 150px;
+    cursor: pointer;
+}
+#web1Content
+{
+    text-align: center;
+    justify-content: center;
+}
+#web2Content
+{
+    text-align: center;
+    justify-content: center;
+}
+
+#web3Content
+{
+    text-align: center;
+    justify-content: center;
 }
