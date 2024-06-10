@@ -150,3 +150,7 @@ select, button {
 .visible {
     display: block;
 }
+#carouselExampleAutoplaying
+{
+    padding: 150px;
+}

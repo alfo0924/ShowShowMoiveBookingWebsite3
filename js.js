@@ -377,9 +377,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // 獲取需要操作的元素
 var web1Image = document.querySelector('#web1Image');
+var web2Image = document.querySelector('#web2Image');
+var web3Image = document.querySelector('#web3Image');
+
 var carousel = document.querySelector('#carouselExampleAutoplaying');
+
 var web1Content = document.querySelector('#web1Content');
-var backButton = document.querySelector('#backButton');
+var web2Content = document.querySelector('#web2Content');
+var web3Content = document.querySelector('#web3Content');
+
+var backButton = document.querySelector('.backButton');
 
 // 監聽圖片點擊事件
 web1Image.addEventListener('click', function() {
@@ -388,11 +395,25 @@ web1Image.addEventListener('click', function() {
     // 顯示web1的內容
     web1Content.style.display = 'block';
 });
+web2Image.addEventListener('click', function() {
+    // 隱藏自動輪播圖
+    carousel.style.display = 'none';
+    // 顯示web1的內容
+    web2Content.style.display = 'block';
+});
+web3Image.addEventListener('click', function() {
+    // 隱藏自動輪播圖
+    carousel.style.display = 'none';
+    // 顯示web1的內容
+    web3Content.style.display = 'block';
+});
 
 // 監聽返回按鈕點擊事件
 backButton.addEventListener('click', function() {
     // 隱藏web1的內容
     web1Content.style.display = 'none';
+    web2Content.style.display = 'none';
+    web3Content.style.display = 'none';
     // 顯示自動輪播圖
     carousel.style.display = 'block';
 });
