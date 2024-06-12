@@ -150,6 +150,19 @@ select, button {
 .visible {
     display: block;
 }
+
+.navbar
+{
+    background: rgba(255, 255, 255, 0.66);
+
+
+}
+
+.offcanvas
+{
+    background: rgba(255, 255, 255, 0.63);
+}
+
 #carouselExampleAutoplaying
 {
     padding: 150px;
